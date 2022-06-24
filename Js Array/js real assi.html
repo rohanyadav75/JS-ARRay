@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array</title>
+</head>
+<body>
+    <h2>Javascript Array</h2>
+    <ul id="demo"></ul>
+
+    <script type="text/javascript">
+        const cars = ["BMW", "Audi", "Scoda", "Benz"];
+        let txt = "<ul>";
+        cars.forEach(myFunc); 
+        txt += "</ul>";
+        document.getElementById("demo").innerHTML = txt;
+        function myFunc(element) {
+            txt += "<li>" + element + "</li>";
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
